@@ -1,0 +1,13 @@
+/* Carousel of brands */
+
+.paginationDotsContainer--brand-carousel {
+    bottom: -12px;
+}
+
+.sliderLeftArrow--brand-carousel{
+    left: 12px;
+}
+
+.sliderRightArrow--brand-carousel{
+    right: 12px;
+}

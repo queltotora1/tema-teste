@@ -1,46 +1,103 @@
 {
   "header": {
-    "blocks": ["header-layout.desktop", "header-layout.mobile"]
-  },
-  "header.full": {
-    "blocks": ["header-layout.desktop", "header-layout.mobile"]
-  },
-  "header-layout.desktop": {
-    "children": [
-      "sticky-layout#desktop"
+    "blocks": [
+      "header-layout.desktop", 
+      "header-layout.mobile"
     ]
   },
-  "sticky-layout#desktop": {
-    "props": {
-      "blockClass": "sticky-header"
-    },
-    "children": ["flex-layout.row#desktop"]
+  "header.full": {
+    "blocks": [
+      "header-layout.desktop",
+      "header-layout.mobile"
+    ]
   },
-  "flex-layout.row#desktop": {
+
+//Header Desktop
+
+  "header-layout.desktop": {
+    "children": [
+      "flex-layout.row#top",
+      "flex-layout.row#main"
+      //"flex-layout.row#bottom"
+    ]
+  },
+  
+  "flex-layout.row#top":{
+    "props":{
+      "blockClass":"top",
+      "fullWidth":true,
+      "horizontalAlign":"center",
+      "preventHorizontalStretch": true,
+      "htmlId": "top-bar"
+    },
+    "children":[
+      "image#discount",
+      "rich-text#main-message",
+      "rich-text#coupon",
+      "link#shop-now"
+    ] 
+  },
+
+  "image#discount":{
+  "props":{
+    "blockClass":"discount-flag",
+    "alt": "discount-flag",
+    "src": "assets/img/header-icons/icons8-discount-24.png"
+  }
+  },
+
+  "rich-text#main-message":{
+    "props":{
+      "blockClass": "top-bar-main-message",
+      "text": "Get 10% off today, use the coupon: ",
+      "textColor": "c-text",
+      "textPosition": "center",
+      "textAlignment": "left"
+
+    }
+  },
+
+  "rich-text#coupon": {
+    "props":{
+      "blockClass": "top-bar-coupon",
+      "text": " NEW10 ",
+      "textColor": "c-text",
+      "textAlignment": "center",
+      "textPosition": "center"
+
+  }
+},
+
+  "link#shop-now": {
     "props": {
+    "blockClass": "top-bar-link",
+    "href": "/offers",
+    "label": " SHOP NOW "
+  }
+  },
+
+  "flex-layout.row#main": {
+    "props": {
+      "blockClass": "main-header-desktop",
       "horizontalAlign": "center",
       "verticalAlign": "center",
       "preventHorizontalStretch": true,
       "preventVerticalStretch": true,
-      "fullWidth": true
+      "fullWidth": false
     },
     "children": [
       "flex-layout.col#logo-desktop",
       "flex-layout.col#spacer",
       "search-bar",
-      "locale-switcher",
       "login",
       "minicart.v2"
     ]
   },
-  "flex-layout.col#spacer": {
-    "props": {
-      "width": "grow"
-    }
-  },
+
   "flex-layout.col#logo-desktop": {
     "props": {
-      "verticalAlign": "middle"
+      "verticalAlign": "middle",
+      "horizontalAlign":"left"
     },
     "children": ["logo"]
   },
@@ -48,10 +105,28 @@
     "props": {
       "title": "Logo",
       "href": "/",
-      "url": "https://brand.vtex.com/static/media/VTEX_pink_RGB.751a9fb5.svg",
-      "width": "80"
+      "url": "https://storecomponents.vtexassets.com/arquivos/store-theme-logo.png",
+      "width": "180"
     }
   },
+
+  "flex-layout.col#spacer": {
+    "props": {
+      "blockClass": "spacer-header",
+      "width": "grow"
+    }
+  },
+
+  "search-bar": {
+    "props": {
+      "inputType": "search",
+      "minSearchTermLength": 3
+    }
+  },
+
+
+//Header mobile
+
   "header-layout.mobile": {
     "children": ["sticky-layout#mobile"]
   },

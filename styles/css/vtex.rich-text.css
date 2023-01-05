@@ -1,0 +1,19 @@
+/*Main message*/
+
+.paragraph--top-bar-main-message{
+    font-size: .75rem;
+    font-weight: 600;
+    color:#03044e
+
+}
+
+/*Coupon*/
+
+.paragraph--top-bar-coupon{
+    font-size: .75rem;
+    font-weight: 800;
+    padding-left: 6px;
+    padding-right: 10px;
+    color:#03044e
+
+}

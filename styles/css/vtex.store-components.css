@@ -1,0 +1,101 @@
+/* Discount flag */
+
+.imageElement--discount-flag{
+    aspect-ratio: 1 / 1;
+    width: 24px;
+    height: auto;
+    padding: 9px 8px;
+}
+
+
+/* Logo */
+
+.logoContainer.sizeDesktop{
+    aspect-ratio: 15 / 1;
+    position: relative;
+    left: -24px;
+}
+
+/* Search bar */
+.searchBarContainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    width: 450px;
+    max-width: 100%;
+    margin: 0 5rem;
+}
+
+/* Container Main Banners */
+
+.container{
+    max-width: 104rem;
+    /* margin-left: 0;
+    margin-right: 0; */
+    padding: 0 32px;
+    margin: 0 188.5px;
+}
+
+/* Info Card */
+
+.infoCardContainer--big-banner{
+    padding-right: 0.75rem;
+    margin-right: .75rem;
+}
+
+/* Images */
+
+.image {
+    width: 100%;
+    height: auto;
+    image-rendering: -webkit-optimize-contrast;
+}
+
+.imageElement--eletronics {
+    width: 840px;
+    aspect-ratio: 420 / 163;
+    margin-bottom: .75rem;
+}
+
+.imageElement--appliances {
+    width: 840px;
+    aspect-ratio: 420 / 163;
+    margin-top: .75rem
+}
+
+/* Carousel of brands */
+
+.image--brand-1{
+    width: 140;
+    height: 110;
+}
+
+.image--brand-2{
+    width: 140;
+    height: 110;
+}
+
+.image--brand-3{
+    width: 140;
+    height: 110;
+}
+
+.image--brand-4{
+    width: 140;
+    height: 110;
+}
+
+.image--brand-5{
+    width: 140;
+    height: 110;
+}
+
+.image--brand-6 {
+    width: 140;
+    height: 110;
+}
+
+
+
+
+

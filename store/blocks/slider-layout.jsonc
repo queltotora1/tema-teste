@@ -1,0 +1,78 @@
+{
+    "slider-layout#home":{
+    "children": [
+    "image#brand-1",
+    "image#brand-2",
+    "image#brand-4",
+    "image#brand-3",
+    "image#brand-5",
+    "image#brand-6"
+    ],
+
+    "props":{
+        "blockClass": "brand-carousel",
+        "label": "carousel-slider",
+        "infinite": true,
+        "centerMode": "disabled",
+        "fullWidth": false,
+        "itemsPerPage": {
+            "desktop": 4,
+            "tablet": 1,
+            "phone": 1
+        }
+        // "autoplay": {
+        //     "timeout": 7000,
+        //     "stopOnHover": true             
+        // }
+      }
+    },
+  
+  "image#brand-1": {
+    "props": {
+        "src": "https://appliancetheme.vteximg.com.br/arquivos/flatflat-brand-logo-square1.png?quality=8",
+        "alt": "flatflat-squared",
+        "title": "Image for the brand flatflat squared logo"
+    }
+  },
+
+  "image#brand-2": {
+    "props": {
+        "src": "https://appliancetheme.vteximg.com.br/arquivos/flatflat-brand-logo-square2.png?quality=8",
+        "alt": "flatflat-squared",
+        "title": "Image for the brand flatflat squared logo"
+    }
+  },
+
+
+  "image#brand-3": {
+    "props": {
+        "src": "https://appliancetheme.vteximg.com.br/arquivos/flatflat-brand-logo-square3.png?quality=8",
+        "alt": "flatflat-squared",
+        "title": "Image for the brand flatflat squared logo"
+    }
+  },
+
+  "image#brand-4": {
+    "props": {
+        "src": "https://appliancetheme.vteximg.com.br/arquivos/flatflat-brand-logo-square4.png?quality=8",
+        "alt": "flatflat-squared",
+        "title": "Image for the brand flatflat squared logo"
+    }
+  },
+
+  "image#brand-5": {
+    "props": {
+        "src": "https://appliancetheme.vteximg.com.br/arquivos/flatflat-brand-logo-square5.png?quality=8",
+        "alt": "flatflat-squared",
+        "title": "Image for the brand flatflat squared logo"
+    }
+  },
+
+  "image#brand-6": {
+    "props": {
+        "src": "https://appliancetheme.vteximg.com.br/arquivos/flatflat-brand-logo-square6.png?quality=8",
+        "alt": "flatflat-squared",
+        "title": "Image for the brand flatflat squared logo"
+    }
+  }
+}

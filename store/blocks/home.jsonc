@@ -1,15 +1,68 @@
 {
   "store.home": { 
     "blocks": [
-      "rich-text"
+      "flex-layout.row#banners",
+      "flex-layout.row#margin",
+      "slider-layout#home"
     ]
-  },
-  "rich-text": { 
-    "props": { 
-      "text": "VTEX Store Framework",
-      "textAlignment": "CENTER",
-      "textPosition": "CENTER",
-      "font": "t-heading-1"
-    }
+},
+
+"flex-layout.row#banners":{
+  "children": [
+    "info-card#rethink",
+    "flex-layout.col#twobanners"
+  ],
+  "props":{
+    "blockClass": "main-banners"
   }
+},
+
+"flex-layout.col#twobanners":{
+  "children":[
+    "image#eletronics",
+    "image#major-appliance"
+  ],
+  "props":{
+    "blockClass": "two-banner-column"
+  }
+},
+
+"info-card#rethink": {
+  "props": {
+    "blockClass":"big-banner",
+    "imageUrl": "https://raqueltotora.vtexassets.com/assets/vtex.file-manager-graphql/images/3e344bda-4939-4bf5-b9c5-c1b507a2dc85___53e4fa67eb03e087f91f50caca9e65b7.png?quality=8",
+    "isFullModeStyle": true,
+    "headline": "Time to rethink your kitchen",
+    "callToActionText": "Discover",
+    "textPosition": "center"
+  }
+},
+
+"image#eletronics":{
+  "props":{
+    "blockClass": "eletronics",
+    "src": "assets/img/banners/eletronics.png",
+    "alt": "Eletronics banner offer",
+    "maxWidth": "100%"
+
+  }
+},
+
+"image#major-appliance":{
+  "props":{
+    "blockClass": "appliances",
+    "src": "https://raqueltotora.vtexassets.com/assets/vtex.file-manager-graphql/images/e37ecddb-4feb-46a9-a145-3a8e59eb4ca5___551ed3c2cf135a6b943505592de1ed44.png?quality=8",
+    "alt": "Appliances banner offer",
+    "maxWidth": "100%"
+  }
+},
+
+"flex-layout.row#margin":{
+  "props":{
+    "blockClass": "vertical-space",
+    "paddingBottom": 4,
+    "paddingTop": 4
+  }
+}
+
 }

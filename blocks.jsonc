@@ -1,0 +1,35 @@
+{
+    "rich-text":{
+    "props":{
+        "text": "",
+        "font": "t-heading-1",
+        "textColor": "c-on-base",
+        "textAlignment": "CENTER",
+        "textPosition": "RIGHT",
+        "blockClass": ""
+    }
+},
+
+//Info Card
+
+"info-card":{
+    "props":{
+        "blockClass": "",
+        "callToActionLinkTarget": "_self",
+        "callToActionMode": "button",
+        "callToActionText": "ver oferta",
+        "callToActionUrl": "",
+        "headline": "",
+        "htmlId":"",
+        "imageActionUrl":"",
+        "imageUrl":"", 
+        "isFullModeStyle":"",
+        "linkTarget":"",
+        "mobileImageUrl":"",
+        "subhead":"",
+        "textAlignment":"",
+        "textMode":"",
+        "textPosition":""
+    }
+}
+}

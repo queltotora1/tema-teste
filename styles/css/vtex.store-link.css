@@ -1,0 +1,16 @@
+/*Shop now link*/
+
+.link--top-bar-link{
+    display: block;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-bottom: 4px;
+}
+
+.label--top-bar-link{
+    font-size: .75rem;
+    font-weight: 800;
+    text-decoration: underline;
+    color:#03044e
+
+}
